@@ -13,6 +13,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
+    - name: Install Dependencies
+      run: bundle install
     - name: Run Tests
       run: bundle exec fastlane test
 
